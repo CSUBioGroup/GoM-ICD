@@ -2,7 +2,9 @@
 ## Introduction
 ## Installation
 PyTorch with CUDA is required. Version configuration is located in requirements.txt 
-
+1. 获取官网数据之后进行数据处理，得到MIMIC III 和MIMIC IV数据文件。
+2. 通过title_embedding文件将标签进行处理，其中标签描述信息csv文件也可以在官网获取，roberta-PM预训练模型可以在huggingface获取。
+3. 使用run_gap_rnn_moe进行训练，获得所有结果后，使用run_gap_rnn_moe_val进行测试。
 ## Citation
 代码参考了：
 | Model | Paper | Original Code |
